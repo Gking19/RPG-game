@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=equip\ damage
+comment0.target=Gun(boolean,\ int)
+comment1.params=
+comment1.target=Gun()
+comment2.params=
+comment2.target=int\ shootGun()
+comment3.params=
+comment3.target=int\ focusFire()
+numComments=4
