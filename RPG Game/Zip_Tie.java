@@ -7,5 +7,9 @@
  */
 public class Zip_Tie extends Consumable
 {
-
+    private int uses;
+    private int amountLeft;
+    public Zip_Tie(){
+        super(2,"Zip tie");
+    }
 }

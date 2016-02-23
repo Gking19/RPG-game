@@ -32,4 +32,7 @@ public abstract class Armor extends Item
             return false;
         }
     }
+    public String getName(){
+        return itemName;
+    }
 }

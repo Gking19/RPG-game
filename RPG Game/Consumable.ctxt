@@ -1,8 +1,10 @@
 #BlueJ class context
-comment0.params=uses
-comment0.target=Consumable(int)
+comment0.params=uses\ Name
+comment0.target=Consumable(int,\ java.lang.String)
 comment1.params=
 comment1.target=Consumable()
 comment2.params=
 comment2.target=void\ useConsumable()
-numComments=3
+comment3.params=
+comment3.target=java.lang.String\ getName()
+numComments=4

@@ -9,10 +9,7 @@ public class Suit extends Armor
 {
     String name = "Two piece suit";
     public Suit(){
-        super(15,100,5);
+        super(15,100,5,"Two piece suit");
     }
 
-    public String getName(){
-        return name;
-    }
 }
