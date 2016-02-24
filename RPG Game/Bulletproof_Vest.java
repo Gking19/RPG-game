@@ -2,8 +2,8 @@
 /**
  * Write a description of class Bulletproof_Vest here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Gary Carlson
+ * @version V1
  */
 public class Bulletproof_Vest extends Armor 
 {
