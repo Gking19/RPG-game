@@ -2,16 +2,22 @@
 /**
  * Write a description of class Melee here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Gary Carlson
+ * @version V2
  */
 public abstract class Melee extends Weapon
 {
-    public Melee(boolean equip, int damage){
+    private int usableRange;
+    private int knockDown;
+    private String itemName;
+    public Melee(boolean equip, int damage, int range, int knockdown, String name){
         super(equip,damage);
+        usableRange = range;
+        knockDown = knockdown;
+        itemName = name;
     }
     
     public Melee(){
-        super(true,80);
+        this(true,0,0,0,"");
     }
 }

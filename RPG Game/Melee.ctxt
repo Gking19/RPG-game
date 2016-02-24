@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=equip\ damage
-comment0.target=Melee(boolean,\ int)
+comment0.params=equip\ damage\ range\ knockdown\ name
+comment0.target=Melee(boolean,\ int,\ int,\ int,\ java.lang.String)
 comment1.params=
 comment1.target=Melee()
 numComments=2
