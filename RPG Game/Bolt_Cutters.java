@@ -8,6 +8,6 @@
 public class Bolt_Cutters extends Melee
 {
     public Bolt_Cutters(){
-        super(true,30,275,150,);
+        super(true,30,275,150,"Bolt cutters");
     }
 }
