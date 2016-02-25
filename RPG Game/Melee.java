@@ -16,8 +16,12 @@ public abstract class Melee extends Weapon
         knockDown = knockdown;
         itemName = name;
     }
-    
+
     public Melee(){
         this(true,0,0,0,"");
+    }
+
+    public String getName(){
+        return itemName;
     }
 }

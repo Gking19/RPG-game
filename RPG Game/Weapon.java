@@ -10,6 +10,7 @@ public abstract class Weapon extends Item implements WeaponInterface
 {
     private boolean equipable;
     private int damageAmount;
+    private String itemName;
 
     public Weapon(boolean equip, int damage){
         equipable = equip;
