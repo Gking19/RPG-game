@@ -9,25 +9,26 @@ public abstract class Gun extends Weapon
 {
     private int damageDealt;
     private Random damage = new Random();
-    public Gun(boolean equip, int damage){
+    private int minDamage;
+    private int maxDamage;
+    public Gun(boolean equip, int damage, int accuracy, int range, int ammo, int min, int max){
         super(equip, damage);
+        minDamage = min;
+        maxDamage = max;
     }
 
     public Gun(){
-        this(true, 0);
+        this(true,0,0,0,0,0,0);
     }
 
     public int shootGun(){
-
-        damageDealt = damage.nextInt(100);
+        damageDealt = damage.nextInt((maxDamage - minDamage) + 1) + minDamage;
         System.out.println("You take aim and deal " + damageDealt + " points of damage.");
         return damageDealt;
     }
 
     public int focusFire(){
-        int min = 0;
-        int max = 0;
-        damageDealt = damage.nextInt((max - min) + 1) + min;
+        damageDealt = damage.nextInt(maxDamage);
         System.out.println("You hold your breath and deal " + damageDealt + " points of damage.");
         return damageDealt;
     }

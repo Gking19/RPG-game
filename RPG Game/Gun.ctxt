@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=equip\ damage
-comment0.target=Gun(boolean,\ int)
+comment0.params=equip\ damage\ accuracy\ range\ ammo\ min\ max
+comment0.target=Gun(boolean,\ int,\ int,\ int,\ int,\ int,\ int)
 comment1.params=
 comment1.target=Gun()
 comment2.params=

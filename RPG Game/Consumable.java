@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of interface Consumable here.
  * 
@@ -31,5 +31,10 @@ public abstract class Consumable extends Item
 
     public String getName(){
         return itemName;
+    }
+    
+    public ArrayList getStats(){
+        ArrayList stats = new ArrayList();
+        return stats;
     }
 }

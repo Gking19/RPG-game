@@ -7,10 +7,8 @@
  */
 public class M4Carbine extends Gun
 {
-    final int min = 0;
-    final int max = 50;
-    public M4Carbine(){
-        super(true, 50);
-    }
 
+    public M4Carbine(){
+        super(true, 40,60,150,20,0,60);
+    }
 }
