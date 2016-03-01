@@ -2,8 +2,8 @@ import java.util.Random;
 /**
  * Abstract class Gun - write a description of the class here
  * 
- * @author (your name here)
- * @version (version number or date here)
+ * @author Gary Carlson
+ * @version V0.1
  */
 public abstract class Gun extends Weapon
 {
@@ -11,14 +11,16 @@ public abstract class Gun extends Weapon
     private Random damage = new Random();
     private int minDamage;
     private int maxDamage;
-    public Gun(boolean equip, int damage, int accuracy, int range, int ammo, int min, int max){
+    private String itemName;
+    public Gun(boolean equip, int damage, int accuracy, int range, int ammo, int min, int max, String name){
         super(equip, damage);
         minDamage = min;
         maxDamage = max;
+        itemName = name;
     }
 
     public Gun(){
-        this(true,0,0,0,0,0,0);
+        this(true,0,0,0,0,0,0,"");
     }
 
     public int shootGun(){
@@ -31,6 +33,10 @@ public abstract class Gun extends Weapon
         damageDealt = damage.nextInt(maxDamage);
         System.out.println("You hold your breath and deal " + damageDealt + " points of damage.");
         return damageDealt;
+    }
+
+    public String getName(){
+        return itemName;
     }
 
 }

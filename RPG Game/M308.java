@@ -8,6 +8,6 @@
 public class M308 extends Gun
 {
     public M308(){
-        super(true,150,100,200,10,0,150);
+        super(true,150,100,200,10,0,150,"M308");
     }
 }

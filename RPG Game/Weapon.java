@@ -33,4 +33,8 @@ public abstract class Weapon extends Item implements WeaponInterface
             return false;
         }
     }
+
+    public String getName(){
+        return itemName;
+    }
 }
