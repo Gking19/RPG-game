@@ -1,4 +1,5 @@
-
+import java.util.ArrayList;
+@SuppressWarnings("unchecked")
 /**
  * Write a description of class Melee here.
  * 
@@ -32,5 +33,14 @@ public abstract class Melee extends Weapon
         damageDealt = effectiveDamage;
         System.out.println("You swing your weapon and deal " + damageDealt + " points of damage.");
         return damageDealt;
+    }
+
+    public ArrayList getStats(){
+        ArrayList stats = new ArrayList();
+        stats.add(effectiveDamage);
+        stats.add(usableRange);
+        stats.add(knockDown);
+        stats.add(itemName);
+        return stats;
     }
 }

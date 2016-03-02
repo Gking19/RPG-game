@@ -1,4 +1,6 @@
 import java.util.Random;
+import java.util.ArrayList;
+@SuppressWarnings("unchecked")
 /**
  * Abstract class Gun - write a description of the class here
  * 
@@ -11,12 +13,20 @@ public abstract class Gun extends Weapon
     private Random damage = new Random();
     private int minDamage;
     private int maxDamage;
+    private int effectiveDamage;
+    private int effectiveAccuracy;
+    private int effectiveRange;
+    private int effectiveAmmo;
     private String itemName;
     public Gun(boolean equip, int damage, int accuracy, int range, int ammo, int min, int max, String name){
         super(equip, damage);
         minDamage = min;
         maxDamage = max;
         itemName = name;
+        effectiveDamage = damage;
+        effectiveAccuracy = accuracy;
+        effectiveRange = range;
+        effectiveAmmo = ammo;
     }
 
     public Gun(){
@@ -39,4 +49,13 @@ public abstract class Gun extends Weapon
         return itemName;
     }
 
+    public ArrayList getStats(){
+        ArrayList stats = new ArrayList();
+        stats.add(effectiveDamage);
+        stats.add(effectiveAccuracy);
+        stats.add(effectiveRange);
+        stats.add(effectiveAmmo);
+        stats.add(itemName);
+        return stats;
+    }
 }

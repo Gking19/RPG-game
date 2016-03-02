@@ -1,4 +1,6 @@
 import java.util.Random;
+import java.util.ArrayList;
+@SuppressWarnings("unchecked")
 /**
  * Abstract class Armor - write a description of the class here
  * 
@@ -38,5 +40,15 @@ public abstract class Armor extends Item
 
     public String getName(){
         return itemName;
+    }
+
+    public ArrayList getStats(){
+        ArrayList stats = new ArrayList();
+        stats.add(protectionAmount);
+        stats.add(durabilityAmount);
+        stats.add(encumbranceAmount);
+        stats.add(blockChance);
+        stats.add(itemName);
+        return stats;
     }
 }

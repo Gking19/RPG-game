@@ -1,5 +1,7 @@
 import java.lang.Math;
 import java.util.Random;
+import java.util.ArrayList;
+@SuppressWarnings("unchecked")
 /**
  * Write a description of class Weapon here.
  * 
@@ -37,4 +39,6 @@ public abstract class Weapon extends Item implements WeaponInterface
     public String getName(){
         return itemName;
     }
+
 }
+
