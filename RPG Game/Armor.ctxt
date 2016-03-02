@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=protection\ durability\ encumbrance\ Name
-comment0.target=Armor(int,\ int,\ int,\ java.lang.String)
+comment0.params=protection\ durability\ encumbrance\ blockAmount\ Name
+comment0.target=Armor(int,\ int,\ int,\ double,\ java.lang.String)
 comment1.params=
 comment1.target=Armor()
 comment2.params=

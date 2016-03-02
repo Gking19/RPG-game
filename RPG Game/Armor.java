@@ -10,22 +10,25 @@ public abstract class Armor extends Item
     private int protectionAmount;
     private int durabilityAmount;
     private int encumbranceAmount;
+    private double blockChance;
     private String itemName;
-    public Armor(int protection, int durability, int encumbrance, String Name){
+    public Armor(int protection, int durability, int encumbrance, double blockAmount, String Name){
         protectionAmount = protection;
         durabilityAmount = durability;
         encumbranceAmount = encumbrance;
         itemName = Name;
+        blockChance = blockAmount;
     }
 
     public Armor(){
-        this(0,0,0,"");
+        this(0,0,0,0,"");
     }
 
     public boolean blocked(){
         Random block = new Random();
-        int blocked = block.nextInt(2);
-        if(blocked == 1){
+        double blocked = block.nextDouble();
+        System.out.println(blocked);
+        if(blocked < blockChance){
             return true;
         }
         else{

@@ -8,6 +8,6 @@
 public class Ballistic_Vest extends Armor
 {
     public Ballistic_Vest(){
-        super(40,100,19,"Ballistic Vest");
+        super(40,100,19,.2,"Ballistic Vest");
     }
 }

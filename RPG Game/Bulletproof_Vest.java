@@ -8,7 +8,7 @@
 public class Bulletproof_Vest extends Armor 
 {
     public Bulletproof_Vest(){
-        super(20,100,10,"Bulletproof Vest");
+        super(20,100,10,.3,"Bulletproof Vest");
         
     }
 }
