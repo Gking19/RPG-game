@@ -9,8 +9,8 @@ import java.util.ArrayList;
  */
 public abstract class Gun extends Weapon
 {
-    private int damageDealt;
     private Random damage = new Random();
+    private int damageDealt;
     private int minDamage;
     private int maxDamage;
     private int effectiveDamage;
@@ -40,7 +40,7 @@ public abstract class Gun extends Weapon
     }
 
     public int focusFire(){
-        damageDealt = damage.nextInt(maxDamage);
+        damageDealt = maxDamage;
         System.out.println("You hold your breath and deal " + damageDealt + " points of damage.");
         return damageDealt;
     }
