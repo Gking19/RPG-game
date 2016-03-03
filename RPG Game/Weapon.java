@@ -5,8 +5,8 @@ import java.util.ArrayList;
 /**
  * Write a description of class Weapon here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Gary Carlson
+ * @version V2
  */
 public abstract class Weapon extends Item implements WeaponInterface
 {

@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * Abstract class Armor - write a description of the class here
  * 
  * @author Gary Carlson
- * @version V1
+ * @version V2
  */
 public abstract class Armor extends Item 
 {

@@ -2,8 +2,8 @@
 /**
  * Write a description of class First_Aid_Bag here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Gary Carlson
+ * @version V1
  */
 public class First_Aid_Bag extends Consumable
 {

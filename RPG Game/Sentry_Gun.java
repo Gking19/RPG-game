@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Sentry_GUn here.
+ * Write a description of class Sentry_Gun here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Gun Carlson
+ * @version V1
  */
 public class Sentry_Gun extends Consumable
 {

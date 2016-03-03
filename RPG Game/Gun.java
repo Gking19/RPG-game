@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * Abstract class Gun - write a description of the class here
  * 
  * @author Gary Carlson
- * @version V0.1
+ * @version V2
  */
 public abstract class Gun extends Weapon
 {

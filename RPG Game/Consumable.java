@@ -4,7 +4,7 @@ import java.util.ArrayList;
  * Write a description of interface Consumable here.
  * 
  * @author Gary Carlson
- * @version 0.1
+ * @version V2
  */
 public abstract class Consumable extends Item
 {
@@ -14,10 +14,11 @@ public abstract class Consumable extends Item
     public Consumable(int uses, String Name){
         amountLeft = uses;
         itemName = Name;
+
     }
 
     public Consumable(){
-        this(3,"");
+        this(0,"");
     }
 
     public void useConsumable(){
